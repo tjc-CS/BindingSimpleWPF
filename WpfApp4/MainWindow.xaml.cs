@@ -25,12 +25,13 @@ namespace WpfApp4
         {
             InitializeComponent();
             g = new Game();
+            DataContext = g;
         }
 
         private void B1_Click(object sender, RoutedEventArgs e)
         {
             g.ChangeSomething();
-            T1.Text = Convert.ToString(g.board.col);
+            //T1.Text = Convert.ToString(g.board.col);
         }
     }
 }
