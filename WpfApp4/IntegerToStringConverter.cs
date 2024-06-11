@@ -13,12 +13,10 @@ namespace WpfApp4
     {
         public object Convert(object value, Type targetType, object paramater, CultureInfo culture)
         {
+            string v;
+            v = ""+value;
            
-            if((int)value > 10)
-            {
-                return ">10";
-            }
-            return "<10";
+            return v;
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
