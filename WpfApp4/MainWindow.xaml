@@ -20,7 +20,7 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
         <Button Grid.Row="0" Grid.Column="0" x:Name="B1" Click="B1_Click" ></Button>
-
+        
         <TextBox Grid.Row="0" Grid.Column="1" x:Name ="T1" Text = "{Binding board.col, Converter={StaticResource CCConverter}}"></TextBox>
     </Grid>
 </Window>

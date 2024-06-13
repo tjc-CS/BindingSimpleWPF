@@ -11,6 +11,8 @@ namespace WpfApp4
 {
     class IntegerToStringConverter: IValueConverter
     {
+        // converts the data in your model to a form that can be subtituted into the relevant property in
+        // your xaml
         public object Convert(object value, Type targetType, object paramater, CultureInfo culture)
         {
             string v;

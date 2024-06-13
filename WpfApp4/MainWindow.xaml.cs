@@ -25,12 +25,17 @@ namespace WpfApp4
         {
             InitializeComponent();
             g = new Game();
+            // the attribute DataContext has to be set to your main class
+            // this is so the xaml knows where to access the top level property board
             DataContext = g;
         }
 
         private void B1_Click(object sender, RoutedEventArgs e)
         {
             g.ChangeSomething();
+            // the iterpreter will access the attribute, create a converter object and send the paramater to 
+            // the conversion function before substituting the string into xmal, this can be seen in T1s definition
+            // So the manually coded update is removed
             //T1.Text = Convert.ToString(g.board.col);
         }
     }
